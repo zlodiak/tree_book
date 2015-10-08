@@ -1,4 +1,6 @@
-<h1>New Message</h1>
+<h1>reply Message</h1>
+
+<%= render @message.parent if @message.parent%>
 
 <%= render 'form' %>
 
