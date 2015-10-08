@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+
+.nested_messages{
+  margin-left: 30px;
+}
+
+.message_unit{
+  display: inline-block;
+  background: yellow;
+}

@@ -1,8 +1,13 @@
-<div>
-  <div><%= message.body %></div>
-  <span><%= link_to 'reply', new_message_path(:parent_id => message) %></span>
-  <span><%= link_to 'Show', message %></span>
-  <span><%= link_to 'Edit', edit_message_path(message) %></span>
-  <span><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+<div class="message">
+  <div class="content">
+    <div><%= message.content %></div>
+  </div>
+
+  <div class="actions">
+    <span><%= link_to 'reply', new_message_path(:parent_id => message) %></span>
+    <span><%= link_to 'Show', message %></span>
+    <span><%= link_to 'Edit', edit_message_path(message) %></span>
+    <span><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+  </div>
 </div>
 <hr />
