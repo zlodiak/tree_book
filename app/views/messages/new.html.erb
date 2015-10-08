@@ -1,5 +1,7 @@
 <h1>New Message</h1>
 
+<%= render @message.parent if @message.parent %>
+
 <%= render 'form' %>
 
 <%= link_to 'Back', messages_path %>
